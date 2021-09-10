@@ -1,0 +1,16 @@
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: harbor-pvc
+spec:
+  resources:
+    requests:
+      storage: 90Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: "nfs-rwm-1"
+
+
